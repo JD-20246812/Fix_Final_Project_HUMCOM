@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mental health service directory for Baguio City districts.">
+  <title>Home | MindBridge PH</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <form class="search" role="search" onsubmit="return false">
+    <label class="sr-only" for="site-search">Search</label>
+    <input id="site-search" type="search" placeholder="Search bar" autocomplete="off">
+  </form>
+  <a class="brand" href="index.html" aria-label="MindBridge PH home">
+    <img src="images/logo.svg" alt="MindBridge PH logo: a bridge arch" width="52" height="52">
+    <span class="motto">Help is closer than you think</span>
+  </a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+  <nav class="nav-wrap" aria-label="Main navigation">
+    <ul class="nav-list" id="main-nav">
+<li><a href="index.html" aria-current="page">HOME</a></li>
+<li><a href="service.html">SERVICE</a></li>
+<li><a href="about.html">ABOUT US</a></li>
+<li><a href="help-guide.html">HELP &amp; GUIDE</a></li>
+    </ul>
+  </nav>
+  <button class="settings-btn" id="settings-btn" aria-label="Accessibility settings" aria-expanded="false" aria-controls="settings-panel">&#9881;</button>
+  <div class="settings-panel" id="settings-panel" role="dialog" aria-label="Accessibility settings" hidden>
+    <h2>Accessibility settings</h2>
+    <div class="row">
+      <button class="btn secondary" id="size-down" type="button" aria-label="Decrease text size">A-</button>
+      <button class="btn secondary" id="size-up" type="button" aria-label="Increase text size">A+</button>
+    </div>
+    <div class="row">
+      <button class="btn" id="hc-toggle" type="button" aria-pressed="false">High contrast</button>
+      <button class="btn" id="font-toggle" type="button" aria-pressed="false">Readable font</button>
+    </div>
+    <p>Press Escape to close.</p>
+  </div>
+</header>
+<main id="main">
+
+<section class="hero" aria-labelledby="home-h">
+  <img src="images/hero-sunrise.svg" alt="Illustration of green hills under a warm sunrise sky" width="800" height="400">
+  <div class="hero-text"><h1 id="home-h">MindBridge PH</h1><p>A mental health service directory for the districts of Baguio City</p></div>
+</section>
+<p class="callout" style="text-align:center;font-size:1.3rem">If you really need help, reach us and call us. We are here for you.</p>
+<section aria-labelledby="hot-h"><h2 id="hot-h" style="text-align:center">Crisis hotlines</h2>
+<p class="hotline"><a href="tel:1553">NCMH Crisis Hotline: 1553 (toll-free, Luzon)</a></p>
+<p class="hotline"><a href="tel:09178998727">NCMH Crisis Hotline (mobile): 0917-899-8727</a></p>
+<p class="hotline"><a href="tel:09175584673">Hopeline PH: 0917-558-4673</a></p></section>
+<p class="callout">Please verify every hotline number and address with the official source before the website goes live.</p>
+<section aria-labelledby="start-h"><h2 id="start-h">Where would you like to start?</h2>
+<div class="grid">
+  <article class="card"><h3>Find a service</h3><p>Pick your district and see the nearest hospital or clinic, then request an appointment.</p><a class="btn" href="service.html">Open the directory</a></article>
+  <article class="card"><h3>I need help now</h3><p>Hotlines and simple steps for a crisis.</p><a class="btn" href="crisis-support.html">Crisis support</a></article>
+  <article class="card"><h3>Learn and cope</h3><p>Self-care ideas, a breathing exercise and short videos.</p><a class="btn" href="self-care.html">Self-care</a></article>
+</div></section>
+
+</main>
+<footer class="site-footer">
+  <nav aria-label="Footer navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="service.html">Service</a></li>
+      <li><a href="crisis-support.html">Crisis support</a></li>
+      <li><a href="videos.html">Videos</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="accessibility.html">Accessibility</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="references.html">References</a></li>
+    </ul>
+  </nav>
+  <p>MindBridge PH: a student project for HUMCOM 1, aligned with UN SDG 11.</p>
+  <p>This site gives information only and is not a substitute for professional care.</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

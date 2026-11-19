@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Find mental health services by district and request an appointment.">
+  <title>Service Directory | MindBridge PH</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <form class="search" role="search" onsubmit="return false">
+    <label class="sr-only" for="site-search">Search</label>
+    <input id="site-search" type="search" placeholder="Search bar" autocomplete="off">
+  </form>
+  <a class="brand" href="index.html" aria-label="MindBridge PH home">
+    <img src="images/logo.svg" alt="MindBridge PH logo: a bridge arch" width="52" height="52">
+    <span class="motto">Help is closer than you think</span>
+  </a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+  <nav class="nav-wrap" aria-label="Main navigation">
+    <ul class="nav-list" id="main-nav">
+<li><a href="index.html">HOME</a></li>
+<li><a href="service.html" aria-current="page">SERVICE</a></li>
+<li><a href="about.html">ABOUT US</a></li>
+<li><a href="help-guide.html">HELP &amp; GUIDE</a></li>
+    </ul>
+  </nav>
+  <button class="settings-btn" id="settings-btn" aria-label="Accessibility settings" aria-expanded="false" aria-controls="settings-panel">&#9881;</button>
+  <div class="settings-panel" id="settings-panel" role="dialog" aria-label="Accessibility settings" hidden>
+    <h2>Accessibility settings</h2>
+    <div class="row">
+      <button class="btn secondary" id="size-down" type="button" aria-label="Decrease text size">A-</button>
+      <button class="btn secondary" id="size-up" type="button" aria-label="Increase text size">A+</button>
+    </div>
+    <div class="row">
+      <button class="btn" id="hc-toggle" type="button" aria-pressed="false">High contrast</button>
+      <button class="btn" id="font-toggle" type="button" aria-pressed="false">Readable font</button>
+    </div>
+    <p>Press Escape to close.</p>
+  </div>
+</header>
+<main id="main" class="wide">
+
+<div class="service-layout">
+  <aside class="panel sidebar" aria-label="Districts">
+    <div class="city-pill">Baguio City</div>
+    <nav aria-label="District list"><ul id="district-nav" style="list-style:none;margin:0;padding:0"></ul></nav>
+  </aside>
+  <section class="panel results" aria-labelledby="results-title">
+    <h1 id="results-title">District 1</h1>
+    <h2 style="font-size:1rem">Crisis hotline</h2>
+    <p class="hotline"><a href="tel:1553">NCMH Crisis Hotline: 1553 (toll-free, Luzon)</a></p>
+<p class="hotline"><a href="tel:09178998727">NCMH Crisis Hotline (mobile): 0917-899-8727</a></p>
+<p class="hotline"><a href="tel:09175584673">Hopeline PH: 0917-558-4673</a></p>
+    <h2 style="font-size:1rem">Nearest available location</h2>
+    <div id="facility-list" aria-live="polite"></div>
+    <p><small>Facility details are sample data for the design project. Verify before real use.</small></p>
+  </section>
+  <aside class="panel" aria-label="Appointment">
+    <div class="greeting"><img src="images/avatar.svg" alt="Profile picture placeholder" width="44" height="44"><div><small>Hello! How are you :)</small><br><strong>Guest</strong></div></div>
+    <h2 style="font-size:1.05rem">Available appointment</h2>
+    <p id="book-place">Select a place</p>
+    <p>Select date</p>
+    <div class="calendar" role="group" aria-label="Choose a date">
+      <div class="cal-head">
+        <button id="cal-prev" type="button" aria-label="Previous month">&lsaquo;</button>
+        <strong id="cal-label" aria-live="polite"></strong>
+        <button id="cal-next" type="button" aria-label="Next month">&rsaquo;</button>
+      </div>
+      <div class="cal-grid" id="cal-grid"></div>
+    </div>
+    <hr>
+    <p style="text-align:center">Select time</p>
+    <div class="times" role="group" aria-label="Choose a time">
+      <button type="button" aria-pressed="false">9:00 AM</button>
+      <button type="button" aria-pressed="false">11:00 AM</button>
+      <button type="button" aria-pressed="false">2:00 PM</button>
+      <button type="button" aria-pressed="false">4:00 PM</button>
+    </div>
+    <button class="btn" id="make-appt" type="button" style="width:100%">Make appointment</button>
+    <p class="status" id="appt-status" role="status"></p>
+  </aside>
+</div>
+
+</main>
+<footer class="site-footer">
+  <nav aria-label="Footer navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="service.html">Service</a></li>
+      <li><a href="crisis-support.html">Crisis support</a></li>
+      <li><a href="videos.html">Videos</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="accessibility.html">Accessibility</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="references.html">References</a></li>
+    </ul>
+  </nav>
+  <p>MindBridge PH: a student project for HUMCOM 1, aligned with UN SDG 11.</p>
+  <p>This site gives information only and is not a substitute for professional care.</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
